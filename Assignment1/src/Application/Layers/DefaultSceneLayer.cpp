@@ -165,6 +165,18 @@ void DefaultSceneLayer::_CreateScene()
 		});
 		Specular->SetDebugName("Milena's Specular");
 
+		ShaderProgram::Sptr Diffuse = ResourceManager::CreateAsset<ShaderProgram>(std::unordered_map<ShaderPartType, std::string>{
+			{ ShaderPartType::Vertex, "shaders/vertex_shaders/basic.glsl" },
+			{ ShaderPartType::Fragment, "shaders/fragment_shaders/Diffuse.glsl" }
+		});
+		Diffuse->SetDebugName("Milena's Diffuse");
+
+		ShaderProgram::Sptr RimLighting = ResourceManager::CreateAsset<ShaderProgram>(std::unordered_map<ShaderPartType, std::string>{
+			{ ShaderPartType::Vertex, "shaders/vertex_shaders/basic.glsl" },
+			{ ShaderPartType::Fragment, "shaders/fragment_shaders/RimLighitng.glsl" }
+		});
+		RimLighting->SetDebugName("Milena's Rim Lighting");
+
 
 		// Load in the meshes
 

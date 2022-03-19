@@ -12,22 +12,16 @@ struct Material {
 	sampler2D Specular;
 	float Shininess;
 };
-
+// Create a uniform for the material
 uniform Material u_Material;
 
 void main() {
+	// Normalize our input normal
 	vec3 normal = normalize(inNormal);
-	vec4 texColor = texture(u_Material.Diffuse, inUV);
-	vec3 lightColor = vec3(1.0, 1.0, 1.0);
+	vec3 lightDirection = (0.0, 0.0, -1.0);
+	vec3 lightColor = (1.0, 1.0, 1.0);
 
-	float strength = texture(u_Material.Specular, inUV).r;
-	
-	vec3 viewDirection = normalize(u_CamPos.xyz - inWorldPos);
-	vec3 reflectDirection = reflect(-viewDirection, normal); //to point towards player
-	
-	float spec = pow(max(dot(viewDirection, reflectDirection), 0.0), 16);
-
-	vec3 result = spec * inColor * texColor.rgb * lightColor;
+	vec3 result = max(dot(normal.xyz, lightDirection), 0.0) * lightColor;
 
 	frag_color = vec4(result, 1.0);
 }
