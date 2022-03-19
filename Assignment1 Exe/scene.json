@@ -1,0 +1,410 @@
+{
+	"ambient": {
+		"x": 0.10000000149011612,
+		"y": 0.10000000149011612,
+		"z": 0.10000000149011612
+	},
+	"default_material": "null",
+	"lights": [
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": -4.840000152587891,
+				"y": -4.0,
+				"z": 7.199999809265137
+			},
+			"range": 1000.0
+		},
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"range": 4.0
+		},
+		{
+			"color": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			},
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"range": 4.0
+		}
+	],
+	"main_camera": "432d45e0-2850-bd40-9a7c-d73049084001",
+	"objects": [
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Camera": {
+					"clear_color": {
+						"w": -431602080.0,
+						"x": -431602080.0,
+						"y": -431602080.0,
+						"z": -431602080.0
+					},
+					"enabled": true,
+					"far_plane": 1000.0,
+					"fov_radians": 1.5707963705062866,
+					"guid": "432d45e0-2850-bd40-9a7c-d73049084001",
+					"near_plane": 0.10000000149011612,
+					"ortho_enabled": false,
+					"ortho_size": 10.0
+				}
+			},
+			"guid": "72293354-f265-0142-89ed-99db6944881d",
+			"hide_in_inspector": false,
+			"name": "Main Camera",
+			"parent": "null",
+			"position": {
+				"x": -4.840000152587891,
+				"y": -4.239999771118164,
+				"z": 2.240000009536743
+			},
+			"rotation": {
+				"w": 0.7409632802009583,
+				"x": 0.49978601932525635,
+				"y": -0.2508199214935303,
+				"z": -0.37185585498809814
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"EnemyComponent": {
+					"counter": 0.0,
+					"enabled": true,
+					"guid": "8aab4d0d-e88c-cf46-8c6c-4f2574055366"
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "0c016265-d4aa-9f48-aa92-606a1080768b",
+					"material": "3adf1f98-4446-e344-b59f-7b90a66d5ae7",
+					"mesh": "be260b2e-1a75-c34e-a40f-d8570b990fd1"
+				}
+			},
+			"guid": "a761ad8f-c727-d945-b872-61ad13972988",
+			"hide_in_inspector": false,
+			"name": "log",
+			"parent": "null",
+			"position": {
+				"x": -2.75,
+				"y": 2.2699999809265137,
+				"z": 0.7300000190734863
+			},
+			"rotation": {
+				"w": 0.4999999701976776,
+				"x": 0.4999999701976776,
+				"y": 0.4999999701976776,
+				"z": 0.4999999701976776
+			},
+			"scale": {
+				"x": 2.0,
+				"y": 2.0,
+				"z": 2.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "6d94cb71-61a2-3c42-b1fa-25a812847291",
+					"material": "3adf1f98-4446-e344-b59f-7b90a66d5ae7",
+					"mesh": "be260b2e-1a75-c34e-a40f-d8570b990fd1"
+				}
+			},
+			"guid": "99c2bb63-a36f-fc4d-bf7b-1161cfedb7ab",
+			"hide_in_inspector": false,
+			"name": "log2",
+			"parent": "null",
+			"position": {
+				"x": -1.659999966621399,
+				"y": -3.8269999027252197,
+				"z": 0.6399999856948853
+			},
+			"rotation": {
+				"w": 0.6484593749046326,
+				"x": 0.6484593749046326,
+				"y": -0.2819581627845764,
+				"z": -0.2819581627845764
+			},
+			"scale": {
+				"x": 0.75,
+				"y": 0.75,
+				"z": 0.75
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "856ed67c-a8db-bf41-bb2f-a3afb7e43b77",
+					"material": "3da51a91-662f-8d4d-bd3f-b21045d44bec",
+					"mesh": "4706455b-f787-9441-ace0-021e4329ee16"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "fd4d73a3-7ed9-724f-8509-b4112113e4f9",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					}
+				}
+			},
+			"guid": "bc7d8114-23d8-a045-9e8c-0d0015dc68e4",
+			"hide_in_inspector": false,
+			"name": "Plant 2",
+			"parent": "null",
+			"position": {
+				"x": -4.619999885559082,
+				"y": -2.2699999809265137,
+				"z": 1.0
+			},
+			"rotation": {
+				"w": 0.7071067690849304,
+				"x": 0.7071067690849304,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 3.0,
+				"y": 3.0,
+				"z": 3.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "c7825336-8c76-0d47-aff9-3087c04ba57f",
+					"material": "b1ab88fc-e37a-2442-a815-dd35ed2ad5ed",
+					"mesh": "4706455b-f787-9441-ace0-021e4329ee16"
+				}
+			},
+			"guid": "14319894-1b8f-2549-94c3-86031a0c7172",
+			"hide_in_inspector": false,
+			"name": "Plant 3",
+			"parent": "null",
+			"position": {
+				"x": -2.2100000381469727,
+				"y": -4.300000190734863,
+				"z": 0.15000000596046448
+			},
+			"rotation": {
+				"w": 0.1830127239227295,
+				"x": 0.1830127239227295,
+				"y": 0.6830126643180847,
+				"z": 0.6830126643180847
+			},
+			"scale": {
+				"x": 3.0,
+				"y": 3.0,
+				"z": 3.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "0365e17d-fb91-d540-83e1-c44b1a892b7a",
+					"material": "3da51a91-662f-8d4d-bd3f-b21045d44bec",
+					"mesh": "fc03debf-5187-3349-85f6-35d13099d4e3"
+				}
+			},
+			"guid": "dd9c9a0a-cacf-5541-875e-97e837ce43e9",
+			"hide_in_inspector": false,
+			"name": "Plant 4",
+			"parent": "null",
+			"position": {
+				"x": 0.6499999761581421,
+				"y": -10.270000457763672,
+				"z": 1.6299999952316284
+			},
+			"rotation": {
+				"w": 0.6830126643180847,
+				"x": 0.6830126643180847,
+				"y": 0.1830126941204071,
+				"z": 0.1830126941204071
+			},
+			"scale": {
+				"x": 6.5,
+				"y": 6.5,
+				"z": 6.5
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "037f8185-a9d1-6541-b923-5cc78ca53158",
+					"material": "b1ab88fc-e37a-2442-a815-dd35ed2ad5ed",
+					"mesh": "d7a62f0c-47a4-5a4d-bb2d-ee2c7b4cbf85"
+				}
+			},
+			"guid": "4fc1d5f3-b899-2441-a8f1-5c24b17781d3",
+			"hide_in_inspector": false,
+			"name": "Plant 5",
+			"parent": "null",
+			"position": {
+				"x": -1.649999976158142,
+				"y": -0.6399999856948853,
+				"z": 0.6899999976158142
+			},
+			"rotation": {
+				"w": 0.6916548013687134,
+				"x": 0.6916548013687134,
+				"y": -0.1470157653093338,
+				"z": -0.1470157653093338
+			},
+			"scale": {
+				"x": 2.0,
+				"y": 2.0,
+				"z": 2.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "fc4422ad-bcaa-3942-9d95-d5fb75215523",
+					"material": "3da51a91-662f-8d4d-bd3f-b21045d44bec",
+					"mesh": "d7a62f0c-47a4-5a4d-bb2d-ee2c7b4cbf85"
+				},
+				"RotatingBehaviour": {
+					"enabled": true,
+					"guid": "fcd4ebd5-b6e3-534a-bfed-c64becb4aeeb",
+					"speed": {
+						"x": 0.0,
+						"y": 0.0,
+						"z": 0.0
+					}
+				}
+			},
+			"guid": "d0412d05-4b53-1941-9eec-3efba2e06c11",
+			"hide_in_inspector": false,
+			"name": "Plant 6",
+			"parent": "null",
+			"position": {
+				"x": -0.5,
+				"y": -2.240000009536743,
+				"z": 0.75
+			},
+			"rotation": {
+				"w": 0.6963642239570618,
+				"x": 0.6963642239570618,
+				"y": -0.12278780341148376,
+				"z": -0.12278780341148376
+			},
+			"scale": {
+				"x": 2.0,
+				"y": 2.0,
+				"z": 2.0
+			}
+		},
+		{
+			"children": [],
+			"components": {
+				"Gameplay::Physics::RigidBody": {
+					"angular_damping": 0.004999999888241291,
+					"colliders": [
+						{
+							"extents": {
+								"x": 50.0,
+								"y": 50.0,
+								"z": 1.0
+							},
+							"guid": "02d59043-6bcb-1441-8062-ffd824097dd1",
+							"position": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": -1.0
+							},
+							"rotation": {
+								"x": 0.0,
+								"y": 0.0,
+								"z": 0.0
+							},
+							"scale": {
+								"x": 1.0,
+								"y": 1.0,
+								"z": 1.0
+							},
+							"type": "Box"
+						}
+					],
+					"enabled": true,
+					"group": 1,
+					"guid": "4907b4eb-3a8d-734d-aa4b-7c8c8671c363",
+					"linear_damping": 0.0,
+					"mask": -1,
+					"mass": 1.0,
+					"type": "Static"
+				},
+				"RenderComponent": {
+					"enabled": true,
+					"guid": "36d5b8b4-fe6b-0049-8e5b-37a5d1547ea0",
+					"material": "121e65d1-603d-4642-8fa4-2920373b1ebb",
+					"mesh": "3a5a76fe-7ba0-2c46-bb0d-534c833676ba"
+				}
+			},
+			"guid": "ae56c7a0-b283-3f47-bb80-744cd8648d46",
+			"hide_in_inspector": false,
+			"name": "Plane",
+			"parent": "null",
+			"position": {
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"rotation": {
+				"w": 1.0,
+				"x": 0.0,
+				"y": 0.0,
+				"z": 0.0
+			},
+			"scale": {
+				"x": 1.0,
+				"y": 1.0,
+				"z": 1.0
+			}
+		}
+	],
+	"skybox": {
+		"mesh": "null",
+		"orientation": {
+			"w": 0.7071067690849304,
+			"x": 0.7071067690849304,
+			"y": 0.0,
+			"z": 0.0
+		},
+		"shader": "025cacc2-e288-e04f-bb34-1b97a2965045",
+		"texture": "a387e86f-3731-9f48-8ad6-7dee953b1a3a"
+	}
+}
